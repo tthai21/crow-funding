@@ -8,7 +8,7 @@ const Button = ({ type = "button", children, className = "",isLoading = false, .
     <button
       type={type}
       {...rest}
-      className={`${className} ${isLoading? "opacity-50 pointer-events-none" : ""} border border-primary rounded-xl text-base font-semibold px-2 py-4 text-white min-h-[56px]  flex items-center justify-center`}
+      className={`${className} ${isLoading? "opacity-50 pointer-events-none" : ""} border border-primary rounded-xl text-base font-semibold px-4 py-4 min-h-[56px]  flex items-center justify-center`}
     >
       {child}
     </button>

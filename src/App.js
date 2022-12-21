@@ -5,15 +5,18 @@ import DashBoardPage from "./pages/DashBoardPage.js";
 
 const SignUpPage = lazy(() => import("./pages/SignUpPage.js"));
 const SignInPage = lazy(() => import("./pages/SignInPage.js"));
+const CampaignPage = lazy(() => import("./pages/CampaignPage.js"));
+const StartCampaignPage = lazy(() => import("./pages/StartCampaignPage.js"));
 
 function App() {
   return (
     <Suspense>
       <Routes>
         <Route path="/" element={<DashBoardPage></DashBoardPage>}></Route>
+        <Route path="/campaign" element={<CampaignPage></CampaignPage>}></Route>
+        <Route path="/start-campaign" element={<StartCampaignPage></StartCampaignPage>}></Route>
         <Route path="/sign-up" element={<SignUpPage></SignUpPage>}></Route>
         <Route path="/sign-in" element={<SignInPage></SignInPage>}></Route>
-
       </Routes>
     </Suspense>
   );
