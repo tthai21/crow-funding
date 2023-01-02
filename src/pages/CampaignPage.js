@@ -1,8 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/button";
 import Heading from "../components/common/Heading";
-import LayoutDashBoard from "../layout/LayoutDashBoard";
 import CampaignFeature from "../modules/campaign/CampaignFeature";
 import CampaignGrid from "../modules/campaign/CampaignGrid";
 
@@ -10,7 +9,7 @@ const CampaignPage = () => {
    const navigate = useNavigate()
    
   return (
-    <LayoutDashBoard>
+    <Fragment>
       <div className="mb-10 bg-white rounded-3xl py-8 px-10">
         <div className="flex items-center justify-between">
           <div className="flex items-start gap-x-6">
@@ -47,7 +46,7 @@ const CampaignPage = () => {
         <CampaignFeature></CampaignFeature>
         <CampaignFeature></CampaignFeature>
       </CampaignGrid>
-    </LayoutDashBoard>
+    </Fragment>
   );
 };
 

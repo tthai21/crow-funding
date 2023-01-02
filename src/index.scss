@@ -15,7 +15,6 @@
 }
 
 .quill {
-
   @apply text-center border border-strock rounded-xl py-[15px] px-[25px];
   .ql-toolbar.ql-snow {
     border: none;
@@ -26,10 +25,18 @@
   .ql-editor {
     @apply border-none font-primary text-sm;
   }
-  .ql-editor{
-    @apply pt-10 
+  .ql-editor {
+    @apply pt-10;
   }
-  .ql-editor.ql-blank::before{
-    @apply font-normal text-text4 text-sm not-italic
+  .ql-editor.ql-blank::before {
+    @apply font-normal text-text4 text-sm not-italic;
   }
+}
+
+.gradient-banner {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
 }
